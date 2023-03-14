@@ -18,14 +18,22 @@
                             <div class="panel-heading">Input Sequences</div>
                             <div class="panel-body">
                                 <div>Sequence 1</div>
-                                <input type="text" id="sequence2" value="AACGC">
+                                <input type="text" id="sequence2" class="form-control" value="AACGC">
                                 <div>Sequence 2</div>
-                                <input type="text" id="sequence1" value="AATCG">
+                                <input type="text" id="sequence1" class="form-control" value="AATCG">
                                 <div class="alignment-section">
-                                    <div>Alignment algorithm</div>
-                                    <div class="btn-group">
-                                        <button id="global-btn" class="btn active">Needleman-Wunsch (Global)</button>
-                                        <button id="local-btn" class="btn">Smith-Waterman (Local)</button>
+                                    <div class="alignment-header">Alignment algorithm</div>
+                                    <div>
+                                        <label>
+                                            <input type="radio" id="global" name="algorithm" value="global" checked>
+                                            Needle-Wunsch (Global)
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="radio" id="local" name="algorithm" value="local">
+                                            Smith-Waterman (Local)
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -34,11 +42,11 @@
                             <div class="panel-heading">Scoring</div>
                             <div class="panel-body">
                                 <div>Match</div>
-                                <input type="number" id="match-score" value="2">
+                                <input type="number" id="match-score" class="form-control" value="2">
                                 <div>Mismatch</div>
-                                <input type="number" id="mismatch-score" value="-1">
+                                <input type="number" id="mismatch-score" class="form-control" value="-1">
                                 <div>Gap</div>
-                                <input type="number" id="gap-score" value="-2">
+                                <input type="number" id="gap-score" class="form-control" value="-2">
                             </div>
                         </div>
                     </div>
@@ -46,7 +54,7 @@
                         <div class="panel score-panel">
                             <div id="score" class="panel-heading score"></div>
                             <div class="panel-body">
-                                <div>Best alignment(s)</div>
+                                <div>Best alignment(s):</div>
                                 <pre id="alignments"></pre>
                             </div>
 
@@ -66,7 +74,7 @@
             </div>
             <footer class="footer">
                 <div>
-                    <a href="https://github.com/kyleba2">View on GitHub</a>
+                    <a href="https://github.com/kyleba2/sequence-alignment">View on GitHub</a>
                 </div>
             </footer>
         </div>
