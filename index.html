@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Optimal Sequence Alignment</title>
+        <link rel=stylesheet type="text/css" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body onload="NW()">
+        <div class="container">
+            <div class="page-header"">
+                <h1>Optimal Sequence Alignment</h1>
+            </div>
+            <div class="content">
+                <div>
+                    <div class="input">
+                        <div class="panel">
+                            <div class="panel-heading">Input Sequences</div>
+                            <div class="panel-body">
+                                <div>Sequence 1</div>
+                                <input type="text" id="sequence2" value="AACGC">
+                                <div>Sequence 2</div>
+                                <input type="text" id="sequence1" value="AATCG">
+                                <div class="alignment-section">
+                                    <div>Alignment algorithm</div>
+                                    <div class="btn-group">
+                                        <button id="global-btn" class="btn active">Needleman-Wunsch (Global)</button>
+                                        <button id="local-btn" class="btn">Smith-Waterman (Local)</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading">Scoring</div>
+                            <div class="panel-body">
+                                <div>Match</div>
+                                <input type="number" id="match-score" value="2">
+                                <div>Mismatch</div>
+                                <input type="number" id="mismatch-score" value="-1">
+                                <div>Gap</div>
+                                <input type="number" id="gap-score" value="-2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alignment">
+                        <div class="panel score-panel">
+                            <div id="score" class="panel-heading score"></div>
+                            <div class="panel-body">
+                                <div>Best alignment(s)</div>
+                                <pre id="alignments"></pre>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="matrix">
+                    <div class="matrix-heading">
+                        <h2>Matrix Visualization</h2>
+                        Optimal paths are indicated in red
+                    </div>
+                    <div id="matrix-body" class="matrix-body">
+
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div>
+                    <a href="https://github.com/kyleba2">View on GitHub</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

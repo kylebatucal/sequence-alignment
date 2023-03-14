@@ -1,0 +1,151 @@
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+body {
+    margin: 3em auto 0 auto;
+    padding: 0 1em;
+    max-width: 1200px;
+    line-height: 1.5;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.page-header {
+    text-align: center;
+    padding-bottom: 0.5em;
+    margin: 3em 0 1em;
+    border-bottom: 1px #eee solid;
+}
+
+.content {
+    margin: 0 auto;
+    display: grid;
+}
+
+.panel {
+    margin-bottom: 1em;
+    border: 1px slateblue solid;
+    border-radius: 4px;
+}
+
+.panel-heading {
+    padding: 1em;
+    background-color: slateblue;
+    color: white;
+}
+
+.panel-body {
+    padding: 1em;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 2em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.alignment-section {
+    margin-top: 1em;
+}
+
+button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border: 1px #ccc solid;
+    border-radius: 4px;
+}
+
+.score {
+    background-color: #AC5A67;
+}
+.score-panel {
+    border: 1px #AC5A67 solid;
+}
+
+pre {
+    background-color: #d1d1d0;
+    padding: 1em;
+    padding-top: 2em;
+    border-radius: 4px;
+}
+
+.matrix {
+    text-align: center;
+}
+
+.matrix-heading {
+    margin-top: 4em;
+}
+
+.matrix-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.matrix-body .cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+
+    aspect-ratio: 1/1;
+    border: 1px gray solid;
+    /* font-weight: bold; */
+    font-size: 100%;
+    /* font-size: 1.5vmax; */
+}
+
+.matrix-body .cell-container .value {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+
+}
+
+.matrix-body .cell-container .dia-dir {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+.matrix-body .cell-container .left-dir {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+.matrix-body .cell-container .up-dir {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+.matrix-body .top-edge {
+    border: 0;
+}
+
+.matrix-body .left-edge {
+    border: 0;
+}
+
+
+footer {
+    margin-top: 8em;
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+@media (min-width: 860px) {
+    .content { grid-template-columns: repeat(2, 1fr);}
+    .matrix { margin-left: 2em; }
+}
