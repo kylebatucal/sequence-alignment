@@ -1,7 +1,7 @@
 # Optimal Pairwise Sequence Alignment
 Implementation of the Needleman-Wunsch and Smith-Waterman algorithms as an interactive website.
 
-![](preview.png)
+[![](preview.png)](https://kyleba2.github.io/sequence-alignment/)
 
 [kyleba2.github.io/sequence-alignment](https://kyleba2.github.io/sequence-alignment/)
 
