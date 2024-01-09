@@ -3,7 +3,7 @@ Implementation of the Needleman-Wunsch and Smith-Waterman algorithms as an inter
 
 [![](preview.png)](https://kyleba2.github.io/sequence-alignment/)
 
-[kyleba2.github.io/sequence-alignment](https://kyleba2.github.io/sequence-alignment/)
+[kylebatucal.github.io/sequence-alignment](https://kylebatucal.github.io/sequence-alignment/)
 
 Features:
 - Dynamic programming matrix visualization updates in real-time
